@@ -1,0 +1,16 @@
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\Consumer.exe
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\Consumer.deps.json
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\Consumer.runtimeconfig.json
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\Consumer.runtimeconfig.dev.json
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\Consumer.dll
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\Consumer.pdb
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Vitor\TesteRabbitMQ\Consumer\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.csprojAssemblyReference.cache
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.AssemblyInfoInputs.cache
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.AssemblyInfo.cs
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.csproj.CoreCompileInputs.cache
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.csproj.CopyComplete
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.dll
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.pdb
+C:\Vitor\TesteRabbitMQ\Consumer\obj\Debug\netcoreapp3.1\Consumer.genruntimeconfig.cache
