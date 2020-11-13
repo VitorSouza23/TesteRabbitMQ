@@ -17,11 +17,14 @@ namespace NewTask
 
             model.QueueDeclare(
                 queue: "task_queue",
-                durable: false,
+                durable: true,
                 exclusive: false,
                 autoDelete: false,
                 arguments: null
             );
+
+            IBasicProperties basicProperties = model.CreateBasicProperties();
+            basicProperties.Persistent = true;
 
             string message = GetMessage(args);
             byte[] body = Encoding.UTF8.GetBytes(message);
