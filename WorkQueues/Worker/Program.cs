@@ -28,8 +28,11 @@ namespace Worker
                 arguments: null
             );
 
-            IBasicProperties basicProperties = model.CreateBasicProperties();
-            basicProperties.Persistent = true;
+            model.BasicQos(
+                prefetchSize: 0,
+                prefetchCount: 1,
+                global: false
+            );
 
             EventingBasicConsumer consumer = new EventingBasicConsumer(model);
             consumer.Received += (sender, ea) =>

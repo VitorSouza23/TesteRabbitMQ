@@ -23,16 +23,16 @@ namespace NewTask
                 arguments: null
             );
 
-            IBasicProperties basicProperties = model.CreateBasicProperties();
-            basicProperties.Persistent = true;
-
             string message = GetMessage(args);
             byte[] body = Encoding.UTF8.GetBytes(message);
+
+            IBasicProperties basicProperties = model.CreateBasicProperties();
+            basicProperties.Persistent = true;
 
             model.BasicPublish(
                 exchange: string.Empty,
                 routingKey: "task_queue",
-                basicProperties: null,
+                basicProperties: basicProperties,
                 body: body);
 
             WriteLine("Mensagem enviada.");
