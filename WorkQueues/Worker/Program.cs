@@ -21,7 +21,7 @@ namespace Worker
             using IModel model = connection.CreateModel();
 
             model.QueueDeclare(
-                queue: "teste",
+                queue: "task_queue",
                 durable: false,
                 exclusive: false,
                 autoDelete: false,
@@ -29,7 +29,7 @@ namespace Worker
             );
 
             EventingBasicConsumer consumer = new EventingBasicConsumer(model);
-            consumer.Received += (model, ea) =>
+            consumer.Received += (sender, ea) =>
             {
                 byte[] body = ea.Body.ToArray();
                 string message = Encoding.UTF8.GetString(body);
@@ -39,6 +39,8 @@ namespace Worker
                 Thread.Sleep(dots * 1000);
 
                 WriteLine("[x] Feito.");
+
+                model.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
             };
 
             model.BasicConsume(
